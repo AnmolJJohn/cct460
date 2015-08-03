@@ -46,7 +46,7 @@ if ( false !== $_REQUEST['updated'] ) : ?>
 <table>
 
 <!-- First Option: Allowing users to choose a different color scheme: default, yellow, or pink -->
-<tr valign="top"
+/* <tr valign="top"
 <th scope="row"><?php _e( 'Color Scheme' ); ?></th>
 <td><select name="theme_settings [color_change]">
 <?php foreach ($color_change as $option) { ?>
@@ -54,9 +54,18 @@ if ( false !== $_REQUEST['updated'] ) : ?>
 'selected="selected"'; } ?>><?php echo  htmentities($option); ?></options>
 <?php } ?>
 </select>
-<label for="theme_settings[color_scheme]"><?php _e( 'Please Choose Your Preferred Colour Scheme' ); ?
+<label for="theme_settings[color_scheme]"><?php _e( 'Choose Your Colour Scheme' ); ?
 ></label></td>
+</tr> */
+
+<!-- Second Option: Allowing users to disable th footer -->
+<tr valign="top">
+<th scope="row"><?php _e( 'Disable Widgetized Footer' ); ?></th>
+<td><input id="theme_settings[extended_footer]" name="theme_settings[extended_footer]" type="checkbox" value="1" <?php checked( '1', $options['extended_footer'] ); ?> />
+<label for="theme_settings[disable_related_posts]"><?php _e( 'Check this box if you would like to disable the widgetized footer section' ); ?></label></td>
 </tr>
+
+
 
 //sanitize and validate
 function options_validate( $input ) {
