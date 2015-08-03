@@ -1,13 +1,15 @@
-<?php get_sidebar(); ?>
+<?php
+/**
+ * The sidebar containing the main widget area.
+ *
+ * @package cupcake
+ */
 
-<div id="sidebar">
-<h2 ><?php _e('Categories'); ?></h2>
-<ul >
-<?php wp_list_cats('sort_column=name&optioncount=1&hierarchical=0'); ?>
-</ul>
-<h2 ><?php _e('Archives'); ?></h2>
-<ul >
-<?php wp_get_archives('type=monthly'); ?>
-</ul>
-</div>
+if ( ! is_active_sidebar( 'sidebar-1' ) ) {
+	return;
+}
+?>
 
+<div id="secondary" class="widget-area" role="complementary">
+	<?php dynamic_sidebar( 'sidebar-1' ); ?>
+</div><!-- #secondary -->
