@@ -68,6 +68,7 @@ if ( false !== $_REQUEST['updated'] ) : ?>
 
 
 //sanitize and validate
+
 function options_validate( $input ) {
     global $select_options, $radio_options;
     if ( ! isset( $input['option1'] ) )
