@@ -284,8 +284,9 @@ th {
 	padding:3%;
 	background:#97CBA2;
 	width:100%;
-}
-
+    	overflow: hidden; 
+    	height: auto;
+    	
 .site-description{
 	text-align:center;
 }
