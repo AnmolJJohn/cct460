@@ -282,17 +282,11 @@ th {
 #secondary.widget-area{
 	margin:0;
 	padding:3%;
-	background:#97CBA2;
+	background:#A8E4B5;
 	width:100%;
-<<<<<<< HEAD
-}
+display:inline-block;
 
-=======
-    	overflow: hidden; 
-    	height: auto;
 }
-    	
->>>>>>> origin/_Cupcake
 .site-description{
 	text-align:center;
 }
