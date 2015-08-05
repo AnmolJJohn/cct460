@@ -63,8 +63,11 @@ body {
 }
 .site-branding{
 	height:auto;
-	/*background-image:url("img/cupcakelogo.png"); having difficulties here*/
 	text-align:center;
+}
+.site-branding h1,
+.site-branding p{
+	font-size:0;
 }
 article,
 aside,
@@ -277,13 +280,10 @@ th {
 }
 
 #secondary.widget-area{
-	margin:0.5;
+	margin:0;
 	padding:3%;
-	background:#effff1;
+	background:#97CBA2;
 	width:100%;
-	float: left;
-	clear: both;
-	text-align: center;
 }
 
 .site-description{
@@ -793,9 +793,10 @@ a:active {
 # Widgets
 --------------------------------------------------------------*/
 .widget {
-	margin: auto;
-	display:inline;
+	margin:0;
+	display:inline-block;
 	width:30%;
+	position:top;
 	clear:both;}
 
 /* Make sure select elements fit in widgets. */
@@ -966,5 +967,3 @@ object {
 .gallery-caption {
 	display: block;
 }
-
-
