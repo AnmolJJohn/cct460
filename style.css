@@ -80,6 +80,7 @@ section,
 summary {
 	display: block;
 	margin:0% 25% 0% 25%;
+	clear:both;
 }
 
 audio,
@@ -442,6 +443,19 @@ article{
 	background-color:#FFFFC4;
 	border-radius: 15%;
 }
+.home .post{
+	display:inline-block;
+	width:40%;
+	height:20%;
+	padding:1%;
+	margin:1.5% 2% 1.5% 2%;
+	overflow:hidden;
+}
+#main{
+	text-align:center;
+	background:rgba(255,255,194,0.5);
+}
+
 .entry-content{
 	padding:0 2% 0 2%;
 	border-radius: 22%;
@@ -533,7 +547,7 @@ textarea {
 }
 
 /*--------------------------------------------------------------
-# Navigation http://www.colorhexa.com/97cba2 <- some of the colours we can look into - if we decide to replace;
+# Navigation
 --------------------------------------------------------------*/
 /*--------------------------------------------------------------
 ## Links
@@ -568,7 +582,7 @@ a:active {
 	clear: both;
 	display: block;
 	margin: 0 auto;
-	background:rgba(255,255,255,0.5);
+	background:rgba(255,255,193,0.6);
 	width:100%;
 	border-top:solid 0.03em;
 	border-bottom:solid 0.03em;
