@@ -286,8 +286,6 @@ th {
 	width:100%;
     	overflow: hidden; 
     	height: auto;
-    	display: inline-block;
-    	list-style-type:none;
 }
     	
 .site-description{
