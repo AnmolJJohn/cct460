@@ -55,14 +55,17 @@ html {
 
 body {
 	margin: 0;
-	background-color:#27C439;
 }
 
 #page{
 	background-color:#BCFFC4;
 	background-image: url("img/cupcakeicons.png");
 }
-
+.site-branding{
+	height:auto;
+	/*background-image:url("img/cupcakelogo.png"); having difficulties here*/
+	text-align:center;
+}
 article,
 aside,
 details,
@@ -76,7 +79,7 @@ nav,
 section,
 summary {
 	display: block;
-	margin:3% 25% 3% 25%;
+	margin:0% 25% 0% 25%;
 }
 
 audio,
@@ -434,7 +437,8 @@ table {
 	margin: 0 0 1.5em;
 	width: 100%;
 }
-.post{
+.post,
+article{
 	background-color:#FFFFC4;
 	border-radius: 15%;
 }
@@ -446,7 +450,14 @@ table {
 .entry-footer{
 	text-align:center;
 }
-
+.site-tile{
+	padding:0 30% 0 30%;
+}
+.page-title{
+	background:rgba(255,255,196,0.7);
+	border-radius: 15%;
+	width:100%;
+}
 }
 /*--------------------------------------------------------------
 # Forms
@@ -522,7 +533,7 @@ textarea {
 }
 
 /*--------------------------------------------------------------
-# Navigation
+# Navigation http://www.colorhexa.com/97cba2 <- some of the colours we can look into - if we decide to replace;
 --------------------------------------------------------------*/
 /*--------------------------------------------------------------
 ## Links
