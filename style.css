@@ -284,14 +284,12 @@ th {
 	padding:3%;
 	background:#97CBA2;
 	width:100%;
-    	overflow: hidden; 
-    	height: auto;
-    	display: inline;
-    	list-style-type:none;
-    	
+}
+
 .site-description{
 	text-align:center;
 }
+
 
 /*--------------------------------------------------------------
 # Typography
@@ -618,10 +616,10 @@ a:active {
 }
 
 .main-navigation ul ul {
-	background-color:transparent;
+	background:rgba(255,255,170,0.6);
 	box-shadow: 0 3px 3px rgba(0, 0, 0, 0.2);
 	display: none;
-	float: left;
+	float: right;
 	position: absolute;
 		top: 30px;
 		left: 0;
@@ -634,15 +632,18 @@ a:active {
 }
 
 .main-navigation ul ul a {
-	width: 200px;
+	width: 100%;
 }
 
 .main-navigation ul ul li {
+
 
 }
 
 .main-navigation li:hover > a,
 .main-navigation li.focus > a {
+	background:rgba(255,255,193,.9);
+	padding:0.5%;
 }
 
 .main-navigation ul ul :hover > a,
@@ -687,22 +688,66 @@ body{
 #page{
 	width:100%;
 	background-color:#BCFFC4;
-	background-image: url("img/cupcakeicons.png");/*background image with cupcakes*/
 }
 #main{
 	text-align:center;
 	background:rgba(255,255,194,0.5);
 	width:100%;
 }
-.post{
+.post,
+article{
 	width:100%;
+	margin:1%;
 }
 
-/* Small menu */
-.menu-toggle,
-.main-navigation.toggled ul {
-	display: inline-block;
+.menu-toggle{
+		background-color:#5A4030;
+		color:#fff;
+		margin:auto;
+		text-align:center;
+		width:auto;
 }
+.main-navigation #menu-main {
+		display: none;
+	}
+	.main-navigation ul li:hover > ul {
+		display: auto;
+		background-color:#895C3F;
+	}
+
+	.menu-toggle,
+	.main-navigation.toggled #menu-main {
+		display: block;
+	}
+	.main-navigation #menu-main,
+	.main-navigation #menu-social{
+		float:none;
+		text-align:center;
+		width:100%;
+	}
+	.main-navigation #menu-main li{
+		display:block;
+		padding:1.5%;
+		width:100%;
+	}
+	.main-navigation #menu-main .menu-item.on .sub-menu,
+	.main-navigation #menu-main .menu-item.on .sub-menu ul{
+	    display: block;
+	    float: none;
+	    position: relative;
+	    left:0;
+	    top:0;
+	    text-align: center;
+	}
+	.main-navigation #menu-main .menu-item.on .sub-menu li,
+	.main-navigation #menu-main .menu-item.on .sub-menu li a{
+		float:none;
+		text-align:center;
+		width:100%;
+	}
+}
+
+
 
 /*--------------------------------------------------------------
 # Accessibility
