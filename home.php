@@ -17,7 +17,7 @@ get_header(); ?>
 		<main id="main" class="site-main" role="main">
 
 			<?php /*Query*/
-			$limit = array( 'showposts' => 6);
+			$limit = array( 'cat'=> 'featured', 'showposts' => 4);
 			$custom_query= new WP_Query($limit)
 			 ?>
 	<?php if ( $custom_query->have_posts() ) : while ( $custom_query->have_posts() ) : $custom_query->the_post(); /*Loop Start*/ ?>
@@ -25,7 +25,7 @@ get_header(); ?>
 		<article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
 			<?php
 				if ( has_post_thumbnail() ) {
-				the_post_thumbnail(medium);
+				the_post_thumbnail('medium');
 				} ?>
 		<header class="entry-header">
 			<?php the_title( sprintf( '<p class="entry-title"><a href="%s" rel="bookmark">', esc_url( get_permalink() ) ), '</a></h1>' ); ?>
@@ -33,16 +33,6 @@ get_header(); ?>
 			<?php if ( 'post' == get_post_type() ) : ?>
 			<?php endif; ?>
 		</header><!-- .entry-header -->
-
-		<div class="entry-content">
-			<?php
-				wp_link_pages( array(
-				'before' => '<div class="page-links">' . __( 'Pages:', 'codediva' ),
-				'after'  => '</div>',
-				) );
-			?>
-		</div><!-- .entry-content -->
-
 	</article><!-- #post-## -->
 	<?php endwhile; ?>
 	<?php else : ?>
