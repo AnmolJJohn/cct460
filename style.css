@@ -453,19 +453,11 @@ article{
 }
 .home .post{
 	display:inline-block;
-	background:transparent;
 	width:40%;
 	height:20%;
 	padding:1%;
 	margin:1.5% 2% 1.5% 2%;
 	overflow:hidden;
-}
-.home .post a,
-.home .post h1{
-	text-decoration:none;
-	font-size:1em;
-	margin-top:0;
-	padding-top:0;
 }
 #main{
 	text-align:center;
