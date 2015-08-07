@@ -13,14 +13,12 @@
  * FONT-FACE
  * ====================================================================================================================*/
 @font-face {
-font-family: 'flexslider-icon';
-src:url('../fonts/flexslider-icon.eot');
-src:url('../fonts/flexslider-icon.eot?#iefix') format('embedded-opentype'),
-    url('../fonts/flexslider-icon.woff') format('woff'),
-    url('../fonts/flexslider-icon.ttf') format('truetype'),
-    url('../fonts/flexslider-icon.svg#flexslider-icon') format('svg');
-font-weight: normal;
-font-style: normal}
+  font-family: 'flexslider-icon';
+  src: url('fonts/flexslider-icon.eot');
+  src: url('fonts/flexslider-icon.eot?#iefix') format('embedded-opentype'), url('fonts/flexslider-icon.woff') format('woff'), url('fonts/flexslider-icon.ttf') format('truetype'), url('fonts/flexslider-icon.svg#flexslider-icon') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
 /* ====================================================================================================================
  * RESETS
  * ====================================================================================================================*/
@@ -92,6 +90,8 @@ html[xmlns] .flexslider .slides {
 }
 .flexslider .slides {
   zoom: 1;
+  height:auto;
+  width:60%;
 }
 .flexslider .slides img {
   height: auto;
@@ -135,7 +135,7 @@ html[xmlns] .flexslider .slides {
 }
 .flex-direction-nav a:before {
   font-family: "flexslider-icon";
-  font-size: 40px;
+  font-size: 2.5em;
   display: inline-block;
   content: '\f001';
   color: rgba(0, 0, 0, 0.8);
