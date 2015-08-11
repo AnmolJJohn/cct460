@@ -148,14 +148,10 @@ require get_template_directory() . '/inc/customizer.php';
  * Load Jetpack compatibility file.
 */ 
 require get_template_directory() . '/inc/jetpack.php';
-
 /*this code loads the options page*/
-require get_template_directory() . '/inc/Options.php';
+require get_template_directory() . '/inc/options.php';
 
 // Create Slider Post Type
 require get_template_directory() . '/inc/slider_post_type.php';
 // Create Slider
 require get_template_directory() . '/inc/slider.php';
-/*
-// Call the file that makes our new widget
-require get_stylesheet_directory() .'/inc/cupcakewidget.php';*/
