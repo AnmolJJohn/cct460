@@ -1,0 +1,55 @@
+/*this is for the box*/
+.shortcode_box {
+			padding: 2px 4px;
+			border: 1px solid #ccc;
+		}
+		.yellow {
+			background: #ffd149;
+			color: #666;
+		}
+		.blue {
+			background: #a0c5ef;
+			color: #333;
+		}
+		.gray {
+			background: #f0f0f0;
+			color: #333;
+		}
+/*this styling is for my download button*/		
+.shortcode_download_button {
+			padding: 2px 8px;
+			border: 1px solid #ccc;
+			border-radius: 10px;
+			-webkit-border-radius: 10px;
+			-moz-border-radius: 10px;
+		}
+		.black {
+			background: #ffd149;
+			background: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#636363), to(#332F2F));
+			background: -moz-linear-gradient(19% 75% 90deg,#332F2F, #636363);
+			color: #f0f0f0;
+			border-top-color: #1c1c1c;
+			border-left-color: #1c1c1c;
+			border-right-color: #525252;
+			border-bottom-color: #525252;
+		}
+		.blue {
+			background: #a0c5ef;
+			background: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#508BC7), to(#203F75));
+			background: -moz-linear-gradient(19% 75% 90deg,#203F75, #508BC7);
+			color: #f0f0f0;
+			border-top-color: #023778;
+			border-left-color: #023778;
+			border-right-color: #26609e;
+			border-bottom-color: #26609e;
+		}
+ 
+		.large	{
+			width: 200px;
+		}
+		.medium	{
+			width: 120px;
+		}
+		.small	{
+			width: 80px;
+		}
