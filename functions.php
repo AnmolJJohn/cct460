@@ -156,6 +156,6 @@ require get_template_directory() . '/inc/Options.php';
 require get_template_directory() . '/inc/slider_post_type.php';
 // Create Slider
 require get_template_directory() . '/inc/slider.php';
-/*
+
 // Call the file that makes our new widget
-require get_stylesheet_directory() .'/inc/cupcakewidget.php';*/
+require get_stylesheet_directory() .'/inc/cupcakewidget.php';
